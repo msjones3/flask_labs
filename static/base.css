@@ -32,9 +32,14 @@ form {
   margin-top: 10px;
 
 }
-input{
+input, textarea{
   border: none;
   border-radius: 5px;
+}
+textarea {
+  width: 50%;
+  height: 70px;
+  vertical-align: middle;
 }
 .btn:hover{
   border: 2px solid #1ECD97;
