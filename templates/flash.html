@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block title %}Flashing Messages{% endblock %}
+{% block description %}Send feedback to the user{% endblock %}
+
+{% block content %}
+
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <div>
+    <ul>
+      {% for msg in messages %}
+      <li>{{msg}}</li>
+      {% endfor %}
+  </ul>
+  </div>
+  {% endif %}
+  {% endwith %}
+
+
+{% endblock %}
+
+{% block footer %}Flask Tutorials - flashing messages{% endblock %}
